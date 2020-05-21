@@ -1,4 +1,4 @@
-# 5 Bash scripts in Linux.
+# 5 .txt Bash scripts in Linux.
 
 ## Sripts with $, pwd, if..elif, let.
 
