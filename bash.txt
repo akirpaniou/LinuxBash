@@ -1,0 +1,58 @@
+
+skrypt
+::::::::::::::
+#!/bin/bash
+echo 'Tu jest nasz pierwszy skrypt'
+echo $1
+echo 'Lista plikow'
+ls
+::::::::::::::
+skrypt2
+::::::::::::::
+#!/bin/bash
+echo 'Biezacy katalog'
+pwd
+::::::::::::::
+zadanie2
+::::::::::::::
+#!/bin/bash
+echo "Podaj liczbe: "
+read liczba
+if [ $liczba = 1 ] ; then
+ echo 'Poniedzialek'
+elif [ $liczba = 2 ] ; then
+ echo 'Wtorek'
+fi
+::::::::::::::
+zadanie3
+::::::::::::::
+#!/bin/bash
+echo "Podaj liczbe: "
+let "Wynik = $1 + $2"
+echo $Wynik
+::::::::::::::
+zadanie4
+::::::::::::::
+#!/bin/bash
+licznik=1
+for x in *
+do
+ echo "To jest $licznik plik $x"
+ let licznik=licznik+1
+done
+::::::::::::::
+zadanie5
+::::::::::::::
+#!/bin/bash
+echo "Podaj kod: "
+stty -echo
+read kod
+stty echo
+if [ "$kod" = "inf" ]
+then
+ echo "Prawidlowe"
+else
+ echo "Nieprawislowe"
+ exit l;
+fi
+echo "Koniec programu"
